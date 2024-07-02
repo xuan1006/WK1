@@ -1,0 +1,6 @@
+{"commonName":"土地所有權登記原因","kindCode":"BN","kindName":"撤銷","commonCode":"LAOCA"}
+{"commonName":"建物所有權登記原因","kindCode":"BN","kindName":"撤銷","commonCode":"BUOCB"}
+{"commonName":"土地使用分區","kindCode":"BN","kindName":"兒童遊樂場","commonCode":"LASEP"}
+{"commonName":"土地使用分區","kindCode":"BN01","kindName":"兒童遊樂場用地","commonCode":"LASEP"}
+{"commonName":"土地使用分區","kindCode":"BN02","kindName":"公園兒童遊樂場","commonCode":"LASEP"}
+{"commonName":"土地使用分區","kindCode":"BN03","kindName":"公園、兒童遊樂場","commonCode":"LASEP"}
