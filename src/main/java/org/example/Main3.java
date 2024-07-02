@@ -1,6 +1,8 @@
 package org.example;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.*;
 
 public class Main3 {
@@ -11,12 +13,23 @@ public class Main3 {
         Pattern pattern = Pattern.compile("\\{\\\"kindCode(.*?)\\\"\\}");
         Matcher matcher = pattern.matcher(text);
 
+        List<String> matches = new ArrayList<>();
+
         while (matcher.find()){
-            int start = matcher.start();
-            int end = matcher.end();
-            System.out.println(text.substring(start,end));
-            fw.write(text.substring(start,end)+"\n");
+            Pattern pattern1 = Pattern.compile(".*\\\"*物(.*?)物\\\".*");
+            Matcher matcher1 = pattern1.matcher(matcher.group());
+            while (matcher1.find()){
+                matches.add(matcher1.group());
+            }
+        }
+        for (String match : matches) {
+            fw.write(match + "\n");
         }
         fw.close();
+        br.close();
+
+        for (String match : matches) {
+            System.out.println(match);
+        }
     }
 }
